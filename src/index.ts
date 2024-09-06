@@ -18,7 +18,7 @@ export const handler = async (event: APIGatewayEvent) => {
     //example error
     //throw new HttpError(400,"No se encontro la atencion");
 
-  console.log('hola desde lambda!')
+  console.log('hola desde lambda!!')
     return genResponse(200, response)
   }catch (e) {
     let statusCode = 500;
