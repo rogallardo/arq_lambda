@@ -1,0 +1,8 @@
+{
+    "project.name":"name repo",
+    "project.description":"description repo",
+    "project.function.dev":"name function lambda for dev",
+    "project.function.prod":"name function lambda for prod",
+    "project.endpoint.name":"name endpoint",
+    "project.lambda.method":"method endpoint[GET,POST,PUT,...]"
+}
