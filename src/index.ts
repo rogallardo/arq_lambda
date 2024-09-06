@@ -8,13 +8,7 @@ export const handler = async (event: APIGatewayEvent) => {
   try {
     let secretdb = process.env.SECRETDB? process.env.SECRETDB: "";
     let secretdbmongo = process.env.SECRETDBMONGO? process.env.SECRETDBMONGO: "";
-    //console.log("event", event);
-    //get param in event
-    //ejemplo de validacion de objeto de la request mediante zod
-    // const request = z.object({
-    //   atencionId: z.string().transform((val:string)=>val ? parseInt(val) : 0).refine(val => val >= 1),
-    //   userId: z.string()
-    // }).parse(event.queryStringParameters);
+
 
     let response = {
       estado:"OK"
