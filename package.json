@@ -1,13 +1,13 @@
 {
-  "name": "lambda-test",
+  "name": "<{{project.name}}>",
   "version": "1.0.0",
-  "description": "description",
+  "description": "<{{project.description}}>",
   "main": "src/index.js",
   "scripts": {
     "build": "ncc build src/index.ts -o dist",
     "zip": "cd dist/ && bestzip ../dist.zip * && cd ../",
-    "deploy-dev": "npm run build && npm run zip && aws lambda update-function-code --function-name lambda-test-dev --zip-file fileb://dist.zip",
-    "deploy-prod": "npm run build && npm run zip && aws lambda update-function-code --function-name lambda-test-prod --zip-file fileb://dist.zip",
+    "deploy-dev": "npm run build && npm run zip && aws lambda update-function-code --function-name <{{project.function.dev}}> --zip-file fileb://dist.zip",
+    "deploy-prod": "npm run build && npm run zip && aws lambda update-function-code --function-name <{{project.function.prod}}> --zip-file fileb://dist.zip",
     "dev": "ts-node ./testHandler.ts"
   },
   "author": "",
