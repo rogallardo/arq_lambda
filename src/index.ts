@@ -23,8 +23,8 @@ export const handler = async (event: APIGatewayEvent) => {
     // conexiondb = await initializeDatabase(secretdb,conexiondb!);
     //example error
     //throw new HttpError(400,"No se encontro la atencion");
-  
-    return genResponse(200,response);
+  console.log('hola desde lambda')
+    return 
   }catch (e) {
     let statusCode = 500;
     let response = {
